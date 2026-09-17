@@ -28,9 +28,9 @@ globs = ["**/*.js"]
 LOG_LEVEL = "debug"
 WORKER_ENV = "development"
 CLOUD_PLATFORM = "cloudflare"
-CF_DNS_RESOLVER_URL = "https://cloudflare-dns.com"
+CF_DNS_RESOLVER_URL = "https://quad9.net" 
 CF_DNS_RESOLVER_URL_2 = "https://dns.google"
-#CF_DNS_RESOLVER_URL_2 = "https://quad9.net"
+#CF_DNS_RESOLVER_URL_2 = "https://cloudflare-dns.com"
 
 ##################
 #------PROD------#
