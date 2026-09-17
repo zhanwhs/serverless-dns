@@ -54,6 +54,8 @@ routes = [
 LOG_LEVEL = "info"
 WORKER_ENV = "production"
 CLOUD_PLATFORM = "cloudflare"
+CF_DNS_RESOLVER_URL = "https://dns.google" 
+CF_DNS_RESOLVER_URL_2 = "https://cloudflare-dns.com"
 
 
 ##################
@@ -77,6 +79,8 @@ analytics_engine_datasets = [
 LOG_LEVEL = "logpush"
 WORKER_ENV = "production"
 CLOUD_PLATFORM = "cloudflare"
+CF_DNS_RESOLVER_URL = "https://dns.google" 
+CF_DNS_RESOLVER_URL_2 = "https://cloudflare-dns.com"
 CF_LOGPUSH_R2_PATH = "qlog/"
 AUTO_RENEW_BLOCKLISTS_OLDER_THAN = "42" # weeks
 
