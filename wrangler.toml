@@ -52,6 +52,9 @@ routes = [
 LOG_LEVEL = "info"
 WORKER_ENV = "production"
 CLOUD_PLATFORM = "cloudflare"
+CF_DNS_RESOLVER_URL = "https://dns.google"
+CF_DNS_RESOLVER_URL_2 = "https://dns.google"
+
 
 ##################
 #------ONE-------#
