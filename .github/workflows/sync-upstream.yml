@@ -1,0 +1,25 @@
+name: Sync upstream
+
+on:
+  schedule:
+    # 每 6 小时运行一次
+    - cron: "0 */6 * * *"
+
+  # 允许你在 GitHub Actions 页面手动运行
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Sync fork with upstream
+        run: |
+          gh repo sync zhanwhs/serverless-dns \
+            --source serverless-dns/serverless-dns \
+            --branch main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
