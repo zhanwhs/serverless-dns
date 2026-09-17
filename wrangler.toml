@@ -28,9 +28,8 @@ globs = ["**/*.js"]
 LOG_LEVEL = "debug"
 WORKER_ENV = "development"
 CLOUD_PLATFORM = "cloudflare"
-CF_DNS_RESOLVER_URL = "https://doh.pub" 
-CF_DNS_RESOLVER_URL_2 = "https://dns.google"
-NO_ECS = "true"
+CF_DNS_RESOLVER_URL = "https://dns.google" 
+CF_DNS_RESOLVER_URL_2 = "https://doh.pub"
 
 ##################
 #------PROD------#
